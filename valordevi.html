@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Valor de vivienda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="/imagenes/icono.png" alt="icono">
+
+        <button class="hamburguesa" id="abrir"><i class="bi bi-list"></i></button>
+
+        <nav class="nav" id="nav">
+            <button class="hamburguesa-cerrar" id="cerrar"><i class="bi bi-x-circle"></i></button>
+            <ul class="lista-de-nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Iniciar sesion</a></li>
+                <li><a href="#">Registrarse</a></li>
+                <li><a href="#">Resultados</a></li>
+            </ul>
+        </nav>
+    </header>
+<br>
+    <h1 class="titulo-valor-de-vi">¡Elegiste credito por valor de Vivienda!</h1>
+
+    <main class="content">
+        <div class="nombre">
+            <p class="formato-espacio">Nombre</p>
+            <label for="nombre-espacio"></label>
+                <input type="text"> 
+        </div>
+        <div class="valor">
+            <p class="formato-espacio">Valor</p>
+            <label for="valor-espacio"></label>
+                <input type="text"> 
+        </div>
+        <div class="fecha-de-nacimiento">
+            <p class="formato-espacio">Fecha de Nacimiento</p>
+            <label for="nacimiento-espacio"></label>
+                <input type="date"> 
+        </div>
+        <div class="switch-button">
+            <p>¿Subsidio de vivienda?</p>
+            <input type="checkbox" name="switch-button" id="switch-label" class="switch-button__checkbox">
+            <label for="switch-label" class="switch-button__label"></label>
+            <p class="question">¿Quieres saber si aplicas?</p>
+        </div>
+        <style type="text/css" media="screen">
+            :root {
+                --color-green: #00ff00;
+                --color-red: #ff2600;
+                --color-button: #fdffff;
+                --color-black: #000;
+            }
+            .switch-button {
+                display: inline-block;
+            }
+            .switch-button .switch-button__checkbox {
+                display: none;
+            }
+            .switch-button .switch-button__label {
+                background-color: var(--color-red);
+                width: 5rem;
+                height: 3rem;
+                border-radius: 3rem;
+                display: inline-block;
+                position: relative;
+            }
+            .switch-button .switch-button__label:before {
+                transition: .2s;
+                display: block;
+                position: absolute;
+                width: 3rem;
+                height: 3rem;
+                background-color: var(--color-button);
+                content: '';
+                border-radius: 50%;
+                box-shadow: inset 0px 0px 0px 1px var(--color-black);
+            }
+            .switch-button .switch-button__checkbox:checked + .switch-button__label {
+                background-color: var(--color-green);
+            }
+            .switch-button .switch-button__checkbox:checked + .switch-button__label:before {
+                transform: translateX(2rem);
+            }
+        </style>
+
+    </main>
+        <div class="empezar">
+            <button>Empezar la simulacion</button>
+        </div>
+<br>
+<br>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Simulador</h4>
+                <ul>
+                    <li><a href="#">Creditos hipotecarios</a></li>
+                    <li><a href="#">Certificados Por El Banco Nacional</a></li>
+                    <li><a href="#">Politicas De Privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="#">Telefono: +57 3142888841</a></li>
+                    <li><a href="#">Contacto: Erick Guzman</a></li>
+                    <li><a href="#">Email: banconacional01@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Acerca de ti</h4>
+                <ul>
+                    <li><a href="#">Iniciar Sesion</a></li>
+                    <li><a href="#">Registrarse</a></li>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Resultados</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <img src="imagenes/footericon.png" class="footer-icon" alt="footericono">
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
